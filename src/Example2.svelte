@@ -1,4 +1,8 @@
 <script>
-  let value = 0;
+  let value = 'hahaha';
   
 </script>
+
+<input bind:value={value} />
+
+<p>{value}</p>
