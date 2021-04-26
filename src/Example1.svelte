@@ -1,13 +1,13 @@
 <script>
   let count = 1
 
-  // 响应式声明
-  $:double = count * 2
-  $:console.log(`count:${count}`)
-  $:console.log(`count:${double}`)
-  $:if(count > 5){
-    alert(count)
-  }
+  // 反应式声明
+  // $:double = count * 2
+  // $:console.log(`count:${count}`)
+  // $:console.log(`count:${double}`)
+  // $:if(count > 5){
+  //   alert(count)
+  // }
 
   // let numbers = [1,2,3,4]
   // function addNum(){
@@ -18,12 +18,16 @@
 </script>
 
 
- <p>clicked {count} times {double}</p>
+ <p>clicked {count} times</p>
 <button on:click={() =>{ count ++ }}>
   Click
 </button>
 
+<!-- {#if count > 5 }
+	<p>count > 5</p>
+{/if} -->
 
+<!-- <p>double: {double}</p> -->
 
 
 <!-- <p>{numbersStr}</p>
